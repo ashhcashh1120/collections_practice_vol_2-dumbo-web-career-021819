@@ -24,7 +24,9 @@ def remove_non_strings(str)
 end
 
 def count_elements(str)
-  Hash[str.group_by{|i| i}.map{|k,v| [k,v.size]}]
+  str.uniq.each {|i| x = 0
+         str.each {|i2| if i2 == i then x += 1 end}
+         i[:x] = x}
 end
 
 def merge_data()
