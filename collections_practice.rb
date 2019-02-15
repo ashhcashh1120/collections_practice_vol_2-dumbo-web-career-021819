@@ -16,3 +16,9 @@ def first_wa(str)
     string[0,2] == "wa"
   end
 end
+
+def remove_non_strings(str)
+  str.delete_if do |string|
+    string.is_a?(String) == false
+ end
+end
