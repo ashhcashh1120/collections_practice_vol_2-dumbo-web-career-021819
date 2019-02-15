@@ -4,3 +4,7 @@ def begins_with_r(str)
     string[0] == "r"
   end
 end
+
+def contain_a(str)
+  str.select do |string|
+  string.include?("a")
