@@ -10,3 +10,9 @@ def contain_a(str)
   string.include?("a")
  end
 end
+
+def first_wa(str)
+  str.detect do |string|
+    string[0,2] == "wa"
+  end
+end
