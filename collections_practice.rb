@@ -29,11 +29,14 @@ def count_elements(str)
          i[:count] = count}
 end
 
-def merge_data()
+def merge_data(keys, data)
+  merged = []
+keys.each {|i| data.first.map {|k,v| if i.values[0] == k then merged << i.merge(v) end}}
+merged
 end
 
-def find_cool()
+def find_cool(cool)
 end
 
-def organize_schools()
+def organize_schools(schools)
 end
