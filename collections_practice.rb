@@ -22,3 +22,20 @@ def remove_non_strings(str)
     string.is_a?(String) == false
  end
 end
+
+def count_elements()
+  counts = Hash.new 0
+
+words.each do |word|
+  counts[word] += 1
+end
+end
+
+def merge_data()
+end
+
+def find_cool()
+end
+
+def organize_schools()
+end
