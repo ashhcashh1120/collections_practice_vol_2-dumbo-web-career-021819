@@ -39,12 +39,12 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  organize_school = {}
+  organized_schools = {}
  schools.each do |name, hash|
  location = hash[:location]
- organize_school[location] ||= []
+ organized_schools[location] ||= []
  puts name
- organize_school[location] << name
+ organized_schools[location] << name
 end
-puts organize_school
+puts organized_schools
 end
