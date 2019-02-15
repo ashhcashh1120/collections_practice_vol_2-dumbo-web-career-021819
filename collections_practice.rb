@@ -24,7 +24,7 @@ def remove_non_strings(str)
 end
 
 def count_elements(str)
-  str.uniq.each {|i| x = 0
+  str.uniq.each {|i| count = 0
          str.each {|i2| if i2 == i then count += 1 end}
          i[:count] = count}
 end
