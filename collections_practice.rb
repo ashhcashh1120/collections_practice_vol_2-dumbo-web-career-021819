@@ -23,12 +23,8 @@ def remove_non_strings(str)
  end
 end
 
-def count_elements(words)
-  counts = Hash.new 0
-
-words.each do |word|
-  counts[word] += 1
-end
+def count_elements(str)
+  Hash[str.group_by{|i| i}.map{|k,v| [k,v.size]}]
 end
 
 def merge_data()
