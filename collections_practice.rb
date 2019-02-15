@@ -23,7 +23,7 @@ def remove_non_strings(str)
  end
 end
 
-def count_elements()
+def count_elements(words)
   counts = Hash.new 0
 
 words.each do |word|
