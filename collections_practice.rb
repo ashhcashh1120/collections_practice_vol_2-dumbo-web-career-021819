@@ -8,4 +8,5 @@ end
 def contain_a(str)
   str.select do |string|
   string.include?("a")
+ end
 end
